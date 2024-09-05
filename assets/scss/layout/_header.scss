@@ -1,0 +1,28 @@
+.bg-menu {
+  background-color: #AA0601;
+  color: #FFFFFF;
+}
+
+/* nav區塊的容器 */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 4px;
+}
+
+/* nav區塊的img的容器 */
+/* 把a當作img的容器，且img原先就設定 width: 100%; 寬度自適父元素
+  height: auto; 高度自適比例 */
+.logo-link {
+  max-width: 80px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+}

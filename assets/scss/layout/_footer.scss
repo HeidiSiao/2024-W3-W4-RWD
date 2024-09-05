@@ -1,0 +1,78 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+ 
+} 
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+
+
+
+.footer-py {
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.footer-contact {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.footer-contact a {
+  font-size: 36px;
+}
+
+
+.footer-contact >li:nth-child(1) {
+  margin-bottom: 8px;
+}
+
+
+/* 所有第一層li的 a連結 的第一個子元素 */
+.footer-contact >li a :nth-child(1){
+  padding-right: 16px;
+}
+
+/* 加入後可以自定義樣式 */
+.footer-contact .material-symbols-outlined {
+  font-size: 48px; 
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  a {
+      font-size: 14px;
+
+}
+}
+
+.social-list {
+  display: flex;
+}
+  
+.social-list li:nth-child(2) {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.social-list img {
+     width: 48px;
+  }
+
+

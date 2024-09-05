@@ -1,0 +1,80 @@
+form,
+input,
+label,
+textarea {
+    padding-inline: 0;
+    padding-block: 0;
+    border: 0;
+    margin: 0;
+}
+
+/* 多一個gutter要分給左右兩側 */
+.form {
+    width: calc(50% - 12px);
+
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+/* 單獨選擇<legend>做樣式設定注意:`前要空格`：
+        .form-content :first-child {
+        font-size: 20px;
+        margin-bottom: 24px; 
+        } 
+*/
+.form-content {
+
+    legend {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    label {
+        margin-bottom: 8px;
+    }
+
+    input {
+        line-height: inherit;
+        font-family: inherit;
+        margin-bottom: 16px;
+    }
+
+    textarea {
+        height: 136px;
+    }
+}
+
+
+/* 注意權重分數
+label.checkbox {} 這樣選會選到id選擇器 */
+/* 為了覆蓋margin-bottom */
+.form-content .checkbox {
+    margin: 16px 0 48px;
+
+    input[type="checkbox"] {
+        margin: 0;
+    }
+}
+
+textarea,
+input[type="text"] {
+    padding-block: 6px;
+    padding-left: 12px;
+    border: 1px solid #000000;
+}
+
+input[type="submit"] {
+    margin-bottom: 0;
+}
+
+.submit-btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding-block: 16px;
+    width: 66.666%;
+    margin: 0 auto;
+}
+

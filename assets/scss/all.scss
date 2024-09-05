@@ -1,0 +1,54 @@
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+
+
+
+
+
+
+
+
+// - 建議檔案引入順序
+//     - 變數或 mixin 等檔案優先引入，後續樣式檔案才能抓取到這些內容，保持運作正常
+//     - 第三方套件的樣式盡量往前放，自己寫的樣式才能覆蓋它
+
+// // main.scss 統一管理 scss 檔
+
+// // utils 內輔助管理 or 產生樣式的檔案
+// @import "utils/variables";
+// @import "utils/mixins";
+
+// // 第三方套件
+// @import "vendors/bootstrap";
+
+// // base
+// @import "base/reset";
+// @import "base/base";
+
+// // layout
+// @import "layout/header";
+// @import "layout/footer";
+
+// // components
+// @import "components/buttons";
+
+// // pages
+// @import "pages/index";
+
+
+// // 1. 元件(進階)*
+// @import "button"; 
+// @import "..."; 
+
+// // 2. 雜項(進階)*
+// @import "utilities"; 
+
+// // 3. 共用樣式
+// @import "layout"; // 共同框架、第一層
+
+// // 4. 分頁樣式
+// @import "index";
+// @import "page1";

@@ -1,0 +1,21 @@
+// button
+
+/* components */
+.btn-style {
+    background-color: #AA0601;
+    color: #FFFFFF;
+
+    &.btn-action {
+        padding: 6px 12px;
+        font-size: 20px;
+    }
+    
+    &.submit-btn {
+        font-size: 16px;
+        font-weight: 700;
+        padding-block: 16px;
+        width: 66.666%;
+        margin: 0 auto;
+    }
+    
+}

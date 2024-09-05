@@ -1,0 +1,155 @@
+// card 格線系統
+/* layout-about-card */
+.row-card {
+    display: flex;
+    margin-inline: -12px;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+/* .col-2 {
+    width: 50%;
+
+} */
+
+.col-4 {
+    width: 33.333333%;
+    padding-inline: 12px;
+}
+
+.col-3 {
+    width: 25%;
+    padding-inline: 12px;
+}
+
+/* col 式排版的圖片樣式 */
+/* .card>img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+} */
+
+
+/* flex系列 */
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.col-wrap-center {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* gap系列 */
+.gap-6 {
+    gap: 24px;
+}
+
+.gap-12 {
+    gap: 48px;
+}
+
+.gap-16 {
+    gap: 64px;
+}
+
+
+
+/* 文字排版 */
+.ta-c {
+    text-align: center;
+}
+
+
+/* 一些間距、行高 */
+.mx-auto {
+    margin: 0 auto;
+}
+
+.mt-1 {
+    margin-top: 4px;
+}
+
+.mt-20 {
+    margin-top: 80px;
+}
+
+.mb-2 {
+    margin-bottom: 8px;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+.mb-6 {
+    margin-bottom: 24px;
+}
+
+.mb-12 {
+    margin-bottom: 48px;
+}
+
+
+/* padding */
+.pb-2 {
+    padding-bottom: 8px;
+}
+
+
+/* color */
+.accent-color {
+    color: $accent-color;
+}
+
+.secondary-color {
+    color: $secondary-color;
+}
+
+.bg-color {
+    background-color: $bg-color;
+}
+
+.info-color {
+    background-color: $info-color;
+}
