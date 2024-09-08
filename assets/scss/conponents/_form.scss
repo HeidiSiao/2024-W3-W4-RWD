@@ -8,16 +8,28 @@ textarea {
     margin: 0;
 }
 
-/* 多一個gutter要分給左右兩側 */
+/* 多一個gutter要分給左右兩側？ */
 .form {
-    width: calc(50% - 12px);
+    width: 50%;
 
-    .form-content {
+    @include pad {
+        width: 83%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
+}
+
+
+
+.form-content {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    }
 }
+
 
 /* 單獨選擇<legend>做樣式設定注意:`前要空格`：
         .form-content :first-child {
@@ -47,9 +59,8 @@ textarea {
     }
 }
 
-@media (max-width: 992px) {
+@include pad {
     .form-content {
-
         legend {
             font-size: 16px;
         }    
@@ -59,7 +70,7 @@ textarea {
 
 
 /* 注意權重分數
-label.checkbox {} 這樣選會選到id選擇器 */
+label.checkbox {} 這樣選會變id選擇器 */
 /* 為了覆蓋margin-bottom */
 .form-content .checkbox {
     margin: 16px 0 48px;
@@ -80,24 +91,4 @@ input[type="submit"] {
     margin-bottom: 0;
 }
 
-.submit-btn {
-    font-size: 16px;
-    font-weight: 700;
-    padding-block: 16px;
-    width: 66.666%;
-    margin: 0 auto;
-}
 
-@media (max-width: 992px) {
-    .form {
-        width: 83%;
-    }
-
-}
-
-@media (max-width: 576px) {
-    .form {
-        width: calc(100% - 12px);
-    }
-
-}

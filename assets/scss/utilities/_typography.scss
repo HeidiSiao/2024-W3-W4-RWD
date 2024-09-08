@@ -13,7 +13,8 @@
 .h2 {
     font-size: $font-size-h2;
     font-weight: 700;
-    @media (min-width: 320) {
+
+    @media mobile-sm {
         font-size: $font-size-fs-2;
         white-space: pre-wrap;
     }
