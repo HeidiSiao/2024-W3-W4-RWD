@@ -1,34 +1,51 @@
-.fw-bold {
-    font-weight: bold;
-}
+
 
 /* font-size */
 .h1 {
     font-size: $font-size-h1;
     font-weight: 700;
+    
+    @include mobile {
+        font-size: $font-size-fs-1;
+    }
 }
 
 .h2 {
     font-size: $font-size-h2;
     font-weight: 700;
+    @media (min-width: 320) {
+        font-size: $font-size-fs-2;
+        white-space: pre-wrap;
+    }
 }
+
 
 .h3 {
     font-size: $font-size-h3;
+
+    @include mobile {
+        font-size: $font-size-fs-3;
+
+    }
 }
 
 .fs-1 {
-    font-size: $font-size-fs-1;
+    font-size: $font-size-fs-1;     //24px
 }
 
 .fs-2 {
-    font-size: $font-size-fs-2;
+    font-size: $font-size-fs-2;     //20px
 }
 
 .fs-3 {
-    font-size: $font-size-fs-3;
+    font-size: $font-size-fs-3;     //16px
 }
 
 .fs-4 {
-    font-size: $font-size-fs-4x;
+    font-size: $font-size-fs-4;     //14px
+}
+
+
+.fw-bold {
+    font-weight: bold;
 }

@@ -1,0 +1,74 @@
+// .section-lg-inner {
+//     padding-top: 80px;
+//     padding-bottom: 80px;
+// }
+
+
+
+.page-title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    &-bar {
+        border-left: 8px solid $highlight;
+        padding-left: 16px;
+    }
+
+    @include pad {
+        margin-top: 0;
+    }
+
+    @include mobile {
+        margin-bottom: 12px;
+
+    }
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 24px;
+
+    @include mobile {
+    margin-top: 12px;
+    margin-bottom: 24px;
+
+    }
+}
+
+.text-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.text-body {
+    margin-bottom: 32px;
+    
+    @include mobile {
+        margin-bottom: 24px;
+    }
+}
+
+.row-flex {
+   display: flex;
+   flex-wrap: wrap;
+   margin-inline: -12px;
+}
+
+//ul清單中的最後一個li的p段落
+.content-faq > li:last-child p {
+    margin-bottom: 0px;
+}
+
+.col-8 {
+    width: 66.66666667%;
+    padding-inline: 12px;
+
+    @include pad {
+        width: 100%;
+    }
+
+}
+

@@ -1,6 +1,6 @@
 .bg-menu {
-  background-color: #AA0601;
-  color: #FFFFFF;
+  background-color: $primary-color;
+  color: $secondary-color;
 }
 
 /* nav區塊的容器 */
@@ -9,6 +9,12 @@
   justify-content: space-between;
   align-items: center;
   padding-block: 4px;
+
+  @include mobile-larger {
+    flex-direction: column;
+    align-items: start;
+    padding-inline: 0;
+  }
 }
 
 /* nav區塊的img的容器 */
@@ -18,11 +24,35 @@
   max-width: 80px;
   height: 72px;
   display: flex;
-  justify-content: center;
   align-items: center;
+
+  @include mobile-larger {
+    margin-left: 15px;
+
+  }
 }
 
 .nav-menu {
   display: flex;
   justify-content: space-between;
+  
+  @include mobile-larger {
+    gap: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    .nav-list {
+      width: 50%;
+      border: 1px solid #ffffff;
+      text-align: center;
+    }
+
+    .nav-list > a {
+      padding-block: 12px;
+      font-size: 16px;
+    }
+    
+  }    
 }
+
+

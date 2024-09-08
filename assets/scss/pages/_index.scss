@@ -1,18 +1,55 @@
 .section-inner {
     padding-block: 80px;
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 48px;
+
+        &-accent {
+            color: $accent-color;
+        }
+
+        &-secondary {
+            color: $secondary-color;
+        }
+    }
 }
 
-.section-title-style {
-    color: $accent-color;
-    text-align: center;
-    margin-bottom: 48px;
+@include pad {
+   .section-inner .section-title {
+        margin-bottom: 24px;
+    }
 }
+
+@include mobile {
+    .section-inner {
+        padding-block: 40px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+}
+
 
 
 
 .bg-main {
     height: calc(100vh - 80px);
-    background: url(images/home-header.png) no-repeat 0% / cover;
+    background: url(../images/home-header-sm.png) no-repeat 0% / cover;
+
+    //767px
+    @include mobile-larger {
+        height: calc(100vh - 180px);
+    }
+
+    // 576px
+    @include mobile {
+        height: calc(100px - 180px);
+    }
+
+
+
 
     .main-container {
         display: flex;
@@ -49,13 +86,26 @@
     font-weight: 900;
     text-align: center;
     background-color: $secondary-color;
-    padding-top: 8px;
 
+    @media (max-width: 320px) {
+        font-size: $font-size-fs-3;
+        white-space: pre-wrap;
+    }
 }
 
 .bg-special {
-    background: url(images/index-bg.png);
+    background: url(../images/index-bg.png) no-repeat 0% / cover;
+
+    @include pad {
+        background: url(../images/index-bg-md.png) no-repeat 0% / cover;
+    }
+    @include mobile {
+        background: url(../images/index-bg-sm.png) no-repeat 0% / cover;
+
+    }
 }
+
+
 
 .feedback {
     padding: 16px;

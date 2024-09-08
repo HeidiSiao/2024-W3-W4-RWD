@@ -47,6 +47,16 @@ textarea {
     }
 }
 
+@media (max-width: 992px) {
+    .form-content {
+
+        legend {
+            font-size: 16px;
+        }    
+    }
+ }
+
+
 
 /* 注意權重分數
 label.checkbox {} 這樣選會選到id選擇器 */
@@ -78,3 +88,16 @@ input[type="submit"] {
     margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+    .form {
+        width: 83%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .form {
+        width: calc(100% - 12px);
+    }
+
+}

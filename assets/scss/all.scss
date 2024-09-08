@@ -1,13 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import './base/reset.scss';
+@import './base/bass.scss';
+
+@import './utilities/variables.scss';
+@import './helper/mixin.scss';         //放自定義樣式前，代表使用的樣式邏輯(大中小)
+@import './utilities/typography.scss';
+
+
+@import './utilities/utils';
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 
+@import './conponents/btn.scss';
+@import './conponents/form.scss';
+
+
 @import './pages/index.scss';
-
-
-
-
-
+@import './pages/locations.scss';
+@import './pages/faq.scss';
 
 
 

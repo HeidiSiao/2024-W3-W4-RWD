@@ -2,8 +2,11 @@
 /* layout-about-card */
 .row-card {
     display: flex;
+    flex-wrap: wrap;
     margin-inline: -12px;
+    justify-content: space-between;
 }
+
 
 .card {
     display:flex;
@@ -16,20 +19,60 @@
     width: 50%;
 }
 
-/* .col-2 {
-    width: 50%;
 
-} */
+//4卡-> 3 gutter 分給 4卡 ＝ 72 / 4 = 18px
+//col-md-6 col-md-12
+.col-3 {
+    width: calc(25% - 18px);
+    padding-inline: 12px;
+}
 
+
+
+// 3卡
 .col-4 {
     width: 33.333333%;
     padding-inline: 12px;
 }
 
-.col-3 {
-    width: 25%;
-    padding-inline: 12px;
+
+@media (max-width: 992px) {
+    .col-md-6 {
+        width: calc(50% - 12px);
+    }
+
+    .col-md-12 {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .flex-md-column {
+        flex-direction: column;
+    }
+
+    .gap-6-md-aic {
+        gap: 24px;
+        align-items: center;
+    }
+
+    .mb-md-6 {
+        margin-bottom: 24px;
+    }
+   
 }
+
+@media (max-width: 576px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
 
 /* col 式排版的圖片樣式 */
 /* .card>img {
@@ -37,6 +80,11 @@
     height: auto;
     margin: 0 auto;
 } */
+
+
+
+
+
 
 
 /* flex系列 */
@@ -110,6 +158,10 @@
     margin-top: 4px;
 }
 
+.mt-2 {
+    margin-top: 8px;
+}
+
 .mt-20 {
     margin-top: 80px;
 }
@@ -124,6 +176,10 @@
 
 .mb-6 {
     margin-bottom: 24px;
+}
+
+.mb-8 {
+    margin-bottom: 32px;
 }
 
 .mb-12 {
@@ -153,3 +209,5 @@
 .info-color {
     background-color: $info-color;
 }
+
+
