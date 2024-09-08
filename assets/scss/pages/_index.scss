@@ -36,17 +36,14 @@
 
 .bg-main {
     height: calc(100vh - 80px);
-    background: url(../images/home-header.png) no-repeat center / cover;
+    background: url(../images/home-header.png) no-repeat center center / cover;
 
     //767px
     @include mobile-larger {
+        background: url(../images/home-header-sm.png) no-repeat center center / cover;
         height: calc(100vh - 180px);
     }
 
-    // 576px
-    @include mobile {
-        background: url(../images/home-header-sm.png) no-repeat center / cover;
-    }
 }
 
 .text-container {
@@ -82,11 +79,6 @@
     }
 
 }
-
-
-
-
-
 
 
 .about-img {
